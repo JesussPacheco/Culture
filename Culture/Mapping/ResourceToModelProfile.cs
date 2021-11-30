@@ -9,7 +9,7 @@ namespace Culture.Mapping
         public ResourceToModelProfile()
         {
             CreateMap<SaveDestinationResource, Destination>();
-           
+            CreateMap<SaveHotelResource, Hotel>();
         }
     }
 }

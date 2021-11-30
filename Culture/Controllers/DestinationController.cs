@@ -35,7 +35,7 @@ namespace Culture.Controllers
         }
         
         [HttpGet("{id}")]
-        public async Task<IActionResult> PutAsync(int id, [FromBody] SaveDestinationResource resource)
+        public async Task<IActionResult> GetById(int id, [FromBody] SaveDestinationResource resource)
         {
             var result = await _destinationService.FindByIdAsync(id);
             var destinationResource = _mapper.Map<Destination, DestinationResource>(result.Resource);

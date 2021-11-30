@@ -31,6 +31,7 @@ namespace Culture
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddRouting(options => options.LowercaseUrls = true);
             services.AddControllers();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "Culture", Version = "v1"}); });
             //CONFIGURE
@@ -40,6 +41,8 @@ namespace Culture
             services.AddScoped<IDestinationRepository, DestinationRepository>();
             services.AddScoped<IDestinationService, DestinationService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IHotelRepository, HotelRepository>();
+            services.AddScoped<IHotelService, HotelService>();
             services.AddAutoMapper(typeof(Startup));
 
         }

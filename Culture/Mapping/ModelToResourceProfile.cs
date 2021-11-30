@@ -10,7 +10,8 @@ namespace Culture.Mapping
         public ModelToResourceProfile()
         {
             CreateMap<Destination, DestinationResource>();
-  
+            CreateMap<Hotel, HotelResource>();
+
         }
     }
 }
