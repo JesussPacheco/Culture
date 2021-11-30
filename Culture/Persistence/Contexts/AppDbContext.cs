@@ -52,7 +52,7 @@ namespace Culture.Persistence.Contexts
                     City = "Paris",
                     Country = "France",
                     PhotoUrl =
-                        "https://images.chicmagazine.com.mx/YaunwslDzprh_vg7kiIQ7IkX9ig=/958x596/uploads/media/2021/03/31/torre-eiffel-ingeniero-gustave-eiffel.jpg"
+                        "https://images.chicmagazine.com.mx/YaunwslDzprh_vg7kiIQ"
                 },
                 new Destination
                 {
@@ -61,7 +61,7 @@ namespace Culture.Persistence.Contexts
                     City = "Manchester",
                     Country = "Uk",
                     PhotoUrl =
-                        "https://www.mancity.com/meta/media/ejtfw3zq/etihad-stadium-general-view.jpg?width=1024&height=576&mode=crop"
+                        "https://www.mancity.com/meta"
                 }
             );
             //Constrains Hotels
