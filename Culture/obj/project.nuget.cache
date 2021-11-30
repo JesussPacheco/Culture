@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "f4cAYyb/nNN/j7Uff2kJrFA57ok4RuUrc12ERsGjR/8VJTHRX8KTKLNsPjufx8v50+rVk+VqhhK6wR7nhPUqEQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jesus\\Documents\\202102\\AplicacionesWeb\\proyectProfeEntity\\Culture\\Culture\\Culture.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jesus\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Jesus\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Jesus\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Jesus\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Jesus\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Jesus\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
