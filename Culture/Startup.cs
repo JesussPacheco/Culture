@@ -2,6 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Culture.Domain.Repositories;
+using Culture.Domain.Services;
+using Culture.Persistence.Contexts;
+using Culture.Repositories;
+using Culture.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +33,15 @@ namespace Culture
         {
             services.AddControllers();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "Culture", Version = "v1"}); });
+            //CONFIGURE
+            services.AddDbContext<AppDbContext>();
+            //dependency Injecttion
+            //Destinations
+            services.AddScoped<IDestinationRepository, DestinationRepository>();
+            services.AddScoped<IDestinationService, DestinationService>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddAutoMapper(typeof(Startup));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,6 +52,9 @@ namespace Culture
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Culture v1"));
+                
+               
+                
             }
 
             app.UseHttpsRedirection();
